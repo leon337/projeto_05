@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height:100%;
+  background: rgb(168, 162, 162);
+  
+}
+.clear{
+  clear:both;
+}
+
+header.header{
+  border: 1px solid blue;
+  padding: 30px 2%;
+}
+header.header .logo{
+  float:left;
+}
+header.header .desktop{
+  float:right;
+}
+.container{
+  width: 100%;
+  max-width:1400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+header.header ul{
+  list-style: none;
+}
+header.header ul li{
+  display: inline-block;
+  border: 1px solid black;
+}
