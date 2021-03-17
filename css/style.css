@@ -31,6 +31,7 @@ header.header .logo{
 header.header .desktop{
   float:right;
   position:relative; top: 25px; right:60px;
+  border: 1px solid black;
 }
 header.header .container{
   width: 100%;
@@ -39,12 +40,13 @@ header.header .container{
   margin: 0 auto;
   border: 1px solid rgb(240, 16, 16);
   margin: 0 auto;
-  background-color: rgba(0, 255, 234, 0.356);
+  background-color: rgba(233, 233, 233, 0.966);
 }
-header.header ul{
+header.header .desktop ul{
   list-style: none;
+  
 }
-header.header ul li{
+header.header .desktop ul li{
   font-size: 1.4rem;
   padding: 0 25px;
   display: inline-block;
@@ -54,8 +56,13 @@ header.header ul li{
   border-radius: 20px;
   font-style: italic;
 }
-header.header ul li:nth-child(1){
+header.header .desktop ul li:nth-child(1){
   color:red;
+}
+header.header .mobile{
+  float:right;  
+  border: 1px solid black;
+  display:none; 
 }
 
 /* FIM DO HEADER*/
@@ -65,14 +72,13 @@ header.header ul li:nth-child(1){
 
 section.banner{
   width:100%;
-  height: calc(100vh - 120px);  
-  /*border: 1px solid rgb(133 133 113);*/
+  height: calc(100vh - 120px);    
   background-image: url("../images/bg.jpg");
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;  
   background-position: right bottom;
-  position: relative;
+  /*position: relative;*/
   padding: 80px 50px;    
 }
 section.banner div.text-banner {
@@ -120,18 +126,130 @@ section.banner div.text-banner-single:nth-child(4) {
 /* FIM BANNER */
 
 
+/* INICIO VEICULOS EM DESTAQUE */
+
+section.veiculos-em-destaque{
+    padding: 90px 2%; 
+    background-color: aquamarine; 
+      
+  }
+section.veiculos-em-destaque> h2{
+    text-transform: uppercase;
+    font-size: 21px;;
+    text-align: center;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    width:250px;
+    background-color: antiquewhite;
+    position: relative; top:15px;
+    
+    
+  }
+
+section.veiculos-em-destaque div.linha_01{
+    border: 1px solid orangered;
+    max-width:800px;
+    margin: 0 auto;
+  }
+  
+/* FIM VEICULOS EM DESTAQUE */
+
+
 /* INICIO MEDIA SCREEN */
 
 @media screen and (max-width: 800px){
   
-  header.header .desktop{
-  display: none;
-    
+header.header nav.desktop{
+  display: none;    
+}  
+header.header nav.mobile{
+  float:right; 
+  border: none;
+  display:inline-block;
+  background-image: url('/images/menu.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width:50px;
+  height:50px; 
+  margin:30px 30px 0 0; 
 }
+header.header nav.mobile> ul{
+  width:100%;  
+  position:absolute; 
+  top:120px; 
+  left:0;
+  text-align: center;  
+  background-color: aliceblue;  
+}
+header.header nav.mobile> ul li{
+  cursor: pointer;
+  list-style: none;  
+  border: 1px solid black; 
+  height:35px;  
+}
+header.header nav.mobile> ul li:nth-child(1){
+  color: red;
+}
+header.header nav.mobile> ul li:nth-child(1):hover{
+  color: red;
+  font-weight: 600;
   
-  header.header .logo{
-  /*display: none;*/
+}
+section.banner div.text-banner{
+  margin: 65px 1%;
+}
+}
+
+
+@media screen and (max-width:500px){
+
+section.banner{
+    padding: 75px 5px;
+  }
+section.banner div.text-banner {
+    /*padding:130px;*/
+    border: 1px solid rgb(241, 245, 12);
+    background-color: rgba(37, 204, 148, 0.295);
+    margin: 70px 0;
+    width:240px;
+    
+    
   }  
+section.banner div.text-banner-single {
+  color: white;
+  background-image: url('/images/box-text.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /*border: 1px solid white;*/
+  margin: 10px 0;
+  height:35px;  
+  font-size: 21px;  
+  padding:0 15px;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+}
+section.banner div.text-banner-single:nth-child(1) {
+  width: 170px;
+  margin-left: 29px;
+}
+section.banner div.text-banner-single:nth-child(2) {
+  width: 100px;
+  margin-left: 23px;
+}
+section.banner div.text-banner-single:nth-child(3) {
+  width: 100px;
+  margin-left: 16px;
+}
+section.banner div.text-banner-single:nth-child(4) {
+  background-image: url('/images/box-white-text.png');
+  font-size: 18px;
+  color: black;
+  width: 220px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
 }
 
 /* FIM MEDIA SCREEN */
