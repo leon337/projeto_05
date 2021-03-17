@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 html, body {
   height:100%;
-  background: rgba(91, 67, 230, 0.493);
-  
+  background: rgba(91, 67, 230, 0.493);  
 }
 div.clear{
   clear:both;
 }
 /* FIM DAS CONFIGURAÇÕES GLOBAIS*/
+
 
 /*INICIO DO HEADER*/
 
@@ -51,6 +52,7 @@ header.header ul li{
   cursor: pointer;
   background-color: rgb(123, 204, 204);
   border-radius: 20px;
+  font-style: italic;
 }
 header.header ul li:nth-child(1){
   color:red;
@@ -58,7 +60,9 @@ header.header ul li:nth-child(1){
 
 /* FIM DO HEADER*/
 
+
 /* INICIO BANNER */
+
 section.banner{
   width:100%;
   height: calc(100vh - 120px);  
@@ -68,23 +72,21 @@ section.banner{
   background-size: contain;
   background-repeat: no-repeat;  
   background-position: right bottom;
-  position: relative;
-    
+  position: relative;    
 }
 
 /* FIM BANNER */
 
+
 /* INICIO MEDIA SCREEN */
+
 @media screen and (max-width: 800px){
   
   header.header .desktop{
   display: none;}
-
   header.header .logo{
   display: none;
-  }
-  
+  }  
 }
-
 
 /* FIM MEDIA SCREEN */
