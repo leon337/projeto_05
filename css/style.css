@@ -145,12 +145,60 @@ section.veiculos-em-destaque> h2{
     
     
   }
-
 section.veiculos-em-destaque div.linha_01{
     border: 1px solid orangered;
-    max-width:800px;
+    max-width:1000px;
     margin: 0 auto;
   }
+section.veiculos-em-destaque div.container{
+  max-width: 1000px;
+  background-color: azure;
+  margin: 20px auto;
+}
+section.veiculos-em-destaque div.container div.box.carros{
+  text-align: left;
+  background-color:rgba(91, 67, 230, 0.493);
+  width:33.3%;
+  float: left;
+  border: 5px solid rgb(253, 252, 252);
+  padding-bottom: 30px;
+}
+section.veiculos-em-destaque div.container div.box.carros div.img{
+  width:100%;
+  padding-top: 100%;
+  border: 5px solid rgb(255, 255, 253);
+}
+section.veiculos-em-destaque div.container div.box.carros div.img.primeira{
+  background-image: url('/images/img_01.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.veiculos-em-destaque div.container div.box.carros div.img.segunda{
+  background-image: url('/images/img_02.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.veiculos-em-destaque div.container div.box.carros div.img.terceira{
+  background-image: url('/images/img_03.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.veiculos-em-destaque div.container div.box.carros> a{
+  background-color: rgb(101, 34, 168);
+  text-decoration: none;
+  color: rgb(219, 211, 211);
+  padding: 2px 20px;
+  text-align:center;
+  margin-left: 15px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+section.veiculos-em-destaque div.container div.box.carros p{
+  margin: 5px 0 15px 15px;
+}
+section.veiculos-em-destaque div.container div.box.carros> h2{
+  margin: 15px;
+}
   
 /* FIM VEICULOS EM DESTAQUE */
 
@@ -199,8 +247,25 @@ section.banner div.text-banner{
   margin: 65px 1%;
 }
 }
-
-
+@media screen and (max-width:768px){
+  section.veiculos-em-destaque div.container{
+    max-width: 1000px;
+    background-color: azure;
+    margin: 20px auto;
+    text-align: center;
+  }
+  section.veiculos-em-destaque div.container div.box.carros{  
+    display:inline-block;
+    float:none;
+    width:80%; 
+    text-align: center; 
+  }
+/*
+section.veiculos-em-destaque div.container div.box.carros> a{
+display:inline-block;
+text-align: center;
+}*/
+}
 @media screen and (max-width:500px){
 
 section.banner{
@@ -211,10 +276,11 @@ section.banner div.text-banner {
     border: 1px solid rgb(241, 245, 12);
     background-color: rgba(37, 204, 148, 0.295);
     margin: 70px 0;
-    width:240px;
-    
-    
+    width:240px;   
   }  
+section.veiculos-em-destaque div.container div.box.carros{  
+  width:100%;
+}
 section.banner div.text-banner-single {
   color: white;
   background-image: url('/images/box-text.png');
@@ -249,6 +315,7 @@ section.banner div.text-banner-single:nth-child(4) {
   font-weight: 400;
   margin-left: 10px;
 }
+
 
 }
 
