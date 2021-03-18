@@ -202,6 +202,37 @@ section.veiculos-em-destaque div.container div.box.carros> h2{
   
 /* FIM VEICULOS EM DESTAQUE */
 
+/* INICIO SERVIÇOS E DEPOIMENTOS */
+ section.servicos-depoimentos{
+   background-color: green;
+   margin:0 auto;
+   padding: 90px 0px;
+ }
+
+ section.servicos-depoimentos div.half1{
+   background-color:rgba(250, 235, 215, 0.671);
+   margin: 0 5px;
+   float: left;
+   width:50%;
+   text-align: center;
+   
+ }
+
+ section.servicos-depoimentos div.half1 div.half1-wraper {
+  display:inline-block;
+ }
+ section.servicos-depoimentos div.half1 div.half1-wraper ul{
+   list-style: none;   
+ }
+
+ section.servicos-depoimentos div.half1 a{
+   color:red;
+   text-decoration:none;
+ }
+
+
+/* FIM SERVIÇOS E DEPOIMENTOS */
+
 
 /* INICIO MEDIA SCREEN */
 
