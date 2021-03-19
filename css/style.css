@@ -274,7 +274,7 @@ section.veiculos-em-destaque div.container div.box.carros> h2{
   background-color: rgb(101, 34, 168);
   text-decoration: none;
   color: rgb(219, 211, 211);
-  padding: 2px 20px;
+  padding: 10px 20px;
   text-align:center;
   margin-left: 15px;
   border: 3px solid white;
@@ -316,9 +316,111 @@ section.veiculos-em-destaque div.container div.box.carros> h2{
 /* FIM SERVIÇOS E DEPOIMENTOS */
 
 
+/*INICIO CONTATO*/
+
+ .titulo-linha{
+  text-transform: uppercase;
+  font-size: 21px;;
+  text-align: center;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  width:150px;
+  background-color: antiquewhite;
+  position: relative; top:15px;
+
+ }
+.linha {
+  border: 1px solid orangered;
+  max-width:1000px;
+  margin: 0 2%;
+}
+.contato {
+  padding: 50px 2%;
+  border: 1px solid red;
+  text-align: center;
+}
+.formulario{
+  border: 1px solid blue;
+  margin: 30px auto;
+  text-align: left;
+  max-width: 600px;
+  padding: 3%;
+}
+
+section.contato input[type=text]{ 
+  width:100%;
+  height:40px;
+  border: 1px solid #4d4949;
+  line-height:40px;
+  padding-left: 15px;
+  
+}
+
+section.contato div.input-wraper{
+  margin-bottom: 15px;
+  float:left;
+  /*width:100%;*/
+  padding: 8px;
+}
+
+.w100{
+  width:100%;
+}
+.w50{
+  width:50%;
+  
+}
+.textarea {
+ text-align: center;
+ 
+}
+.textarea  textarea{
+ width:100%;
+ padding: 15px 20px;
+ height:120px;
+ resize: none;
+ 
+}
+.enviar {
+  text-align: center;
+  font-size: 2rem;
+ 
+}
+/*FIM CONTATO*/
+
+
+/* INICIO FOOTER */
+footer{
+  padding: 40px 2%;
+  border: 1px solid blue;
+}
+footer nav{
+  float: left;
+  border: 1px solid red;
+  margin-left: 50px;
+}
+footer nav ul{
+  list-style-type: none; 
+  cursor: pointer;  
+}
+footer nav ul li{
+  float: left;
+  padding: 0 20px;  
+}
+footer nav ul li:nth-child(1){
+  color:red;  
+}
+footer P{
+  float: right;
+  border: 1px solid red;
+  margin-right: 50px;
+}
+/* FIM FOOTER */
+
+
 /* INICIO MEDIA SCREEN */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 810px){
   
 header.header nav.desktop{
   display: none;    
@@ -373,8 +475,17 @@ section.banner div.text-banner{
   width:100%;
 }
 
-
-
+footer nav {
+  display: none;
+  
+}
+footer{
+  text-align: center;
+}
+footer p{
+  float:none;
+  margin: 0 auto;
+}
 
 
 
@@ -400,6 +511,9 @@ section.banner div.text-banner{
     padding:50px 0;
     text-align: center;
 
+}
+.w50{
+  width:100%;
 }
 }  
 @media screen and (max-width:500px){
