@@ -183,7 +183,7 @@ section.veiculos-em-destaque div.container div.box.carros div.img.terceira{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-section.veiculos-em-destaque div.container div.box.carros> a{
+/*section.veiculos-em-destaque div.container div.box.carros> a{
   background-color: rgb(101, 34, 168);
   text-decoration: none;
   color: rgb(219, 211, 211);
@@ -192,7 +192,7 @@ section.veiculos-em-destaque div.container div.box.carros> a{
   margin-left: 15px;
   border: 3px solid white;
   border-radius: 5px;
-}
+}*/
 section.veiculos-em-destaque div.container div.box.carros p{
   margin: 5px 0 15px 15px;
 }
@@ -203,31 +203,113 @@ section.veiculos-em-destaque div.container div.box.carros> h2{
 /* FIM VEICULOS EM DESTAQUE */
 
 /* INICIO SERVIÇOS E DEPOIMENTOS */
- section.servicos-depoimentos{
-   background-color: green;
-   margin:0 auto;
-   padding: 90px 0px;
+ .servicos-depoimentos{
+   border: 1px dotted rgb(224, 148, 6);
+   background-color: rgba(75, 26, 219, 0.466);
+  /* margin:0 auto;
+   padding: 90px 0px;*/
+   display:flex;
  }
 
- section.servicos-depoimentos div.half1{
-   background-color:rgba(250, 235, 215, 0.671);
-   margin: 0 5px;
-   float: left;
+ .half1{
+   border: 1px solid rgb(233, 233, 20);
+   background-color:rgb(19, 12, 3);
+   
    width:50%;
+   padding:10% 0;
    text-align: center;
    
  }
-
- section.servicos-depoimentos div.half1 div.half1-wraper {
+ .half1-wraper {
+  border: 1px solid rgb(10, 243, 88);
   display:inline-block;
+  
+  
  }
- section.servicos-depoimentos div.half1 div.half1-wraper ul{
-   list-style: none;   
+ .half1-wraper h2{
+    color: brown;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.8rem;
+    font-style: italic;
+ }
+ .half1-wraper ul{
+   border: 1px solid rgb(13, 188, 231);
+   text-align: left;
+   color:aliceblue;
+   margin-left: 20px;
+   /*margin-right: ;*/
+   display:inline-block;
+   float: left;
+   
+ }
+ .half1-wraper ul li{
+   border: 1px solid rgb(170, 6, 6);
+   
+ }
+ #compra{
+   color:rgb(226, 175, 5);
+ }
+ #venda{
+   color:rgb(255, 0, 157);
+ }
+ #consultoria{
+   color:rgb(72, 255, 0);
+ }
+ #indicacao{
+   color:rgb(55, 0, 255);
+ }
+ #botao{
+   
+   display:inline-block; 
+   margin-top: 60px ;   
+   vertical-align: bottom;
  }
 
- section.servicos-depoimentos div.half1 a{
-   color:red;
-   text-decoration:none;
+
+
+
+ .botao{
+  background-color: rgb(101, 34, 168);
+  text-decoration: none;
+  color: rgb(219, 211, 211);
+  padding: 2px 20px;
+  text-align:center;
+  margin-left: 15px;
+  border: 3px solid white;
+  border-radius: 5px;
+   
+ }
+ .botao:hover{
+   background-color:rgb(149, 0, 168);
+ }
+
+ .half2{
+  border: 1px solid rgb(233, 233, 20);
+  background-color:rgb(216, 122, 15);
+  
+  width:50%;
+  padding:50px 70px;
+  
+  
+ }
+ .half2 h2{
+  margin-bottom: 20px;
+ }
+ .navigation{
+   margin-top:25px;
+   /*float: left;*/
+ }
+ .navigation img{
+   border: 1px solid rgb(233, 233, 20);
+   cursor: pointer;
+   float: left;
+   margin:0 10px;
+ }
+ .navigation .author{
+   float: right;
+ 
  }
 
 
@@ -277,6 +359,25 @@ header.header nav.mobile> ul li:nth-child(1):hover{
 section.banner div.text-banner{
   margin: 65px 1%;
 }
+
+.servicos-depoimentos{
+  display:inline-block;
+  text-align: center;
+}
+.half1{
+  float:left;
+  width:100%;
+}
+.half2{
+  float:left;
+  width:100%;
+}
+
+
+
+
+
+
 }
 @media screen and (max-width:768px){
   section.veiculos-em-destaque div.container{
@@ -291,12 +392,16 @@ section.banner div.text-banner{
     width:80%; 
     text-align: center; 
   }
-/*
-section.veiculos-em-destaque div.container div.box.carros> a{
-display:inline-block;
-text-align: center;
-}*/
+  .half1{
+    border: 1px solid rgb(233, 233, 20);
+    background-color:rgb(19, 12, 3);
+    float: left;
+    width:100%;
+    padding:50px 0;
+    text-align: center;
+
 }
+}  
 @media screen and (max-width:500px){
 
 section.banner{
