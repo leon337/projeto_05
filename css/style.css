@@ -19,7 +19,7 @@ div.clear{
 
 header.header{
   border: 1px solid rgb(0, 0, 255);
-  padding: 30px 2%;
+  padding: 10px 2%;
   height:120px;
   background-color: rgba(255, 255, 0, 0.788);
 
@@ -46,7 +46,7 @@ header.header .desktop ul{
   list-style: none;
   
 }
-header.header .desktop ul li{
+header.header .desktop ul li {
   font-size: 1.4rem;
   padding: 0 25px;
   display: inline-block;
@@ -55,6 +55,10 @@ header.header .desktop ul li{
   background-color: rgb(123, 204, 204);
   border-radius: 20px;
   font-style: italic;
+}
+header.header .desktop ul li a{
+  text-decoration: none;
+  color: rgb(20, 83, 199);
 }
 header.header .desktop ul li:nth-child(1){
   color:red;
@@ -407,8 +411,14 @@ footer nav ul li{
   float: left;
   padding: 0 20px;  
 }
-footer nav ul li:nth-child(1){
-  color:red;  
+footer nav ul> li> a{
+  text-decoration: none;
+  color: rgb(36, 83, 83); 
+}
+
+#home1{
+  color:red;
+   
 }
 footer P{
   float: right;
@@ -439,7 +449,7 @@ header.header nav.mobile{
 header.header nav.mobile> ul{
   width:100%;  
   position:absolute; 
-  top:120px; 
+  top:110px; 
   left:0;
   text-align: center;  
   background-color: aliceblue;  
@@ -448,8 +458,15 @@ header.header nav.mobile> ul li{
   cursor: pointer;
   list-style: none;  
   border: 1px solid black; 
-  height:35px;  
+  height:35px; 
+  
 }
+
+header.header nav.mobile> ul li> a{
+  text-decoration: none;
+}
+
+
 header.header nav.mobile> ul li:nth-child(1){
   color: red;
 }
