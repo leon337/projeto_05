@@ -95,7 +95,7 @@ section.vendas{
 }
 .linha {
   border: 1.5px solid rgb(0, 0, 0);
-  max-width:1000px;
+  max-width:1400px;
   margin: 0 2%;
   background-color:black;
 }
@@ -109,7 +109,7 @@ section.vendas{
 
 .search1{
   padding-bottom: 10px;
-  width:300px;
+  width:90%;
   border: 1px solid black;
 }
 .search1 h2{
@@ -223,97 +223,92 @@ section.vendas{
   display: block;
 }*/
 
-/* INICIO VEICULOS EM DESTAQUE */
-
-section.veiculos-em-destaque{
-    padding: 90px 2%; 
-    background-color: aquamarine; 
-      
-}
-section.veiculos-em-destaque> h2{
-    text-transform: uppercase;
-    font-size: 21px;;
-    text-align: center;
-    /*border: 1px solid black;*/
-    margin: 0 auto;
-    width:250px;
-    background-color: antiquewhite;
-    position: relative; top:15px;
+/* INICIO VITRINE VENDA*/
+  .vitrine{
+    float:left;
+    width:70%;
+    border: 1px solid black;
     
+  }
+
+  .vitrine .box{
+    float:left;
+    width:33.3%;
+    margin-top:20px
     
-}
-section.veiculos-em-destaque div.linha_01{
-    border: 1px solid orangered;
-    max-width:1000px;
-    margin: 0 auto;
-}
-section.veiculos-em-destaque div.container{
-  max-width: 1000px;
-  background-color: azure;
-  margin: 20px auto;
-}
-section.veiculos-em-destaque div.container div.box.carros{
-  text-align: left;
-  background-color:rgba(91, 67, 230, 0.493);
-  width:33.3%;
-  float: left;
-  border: 5px solid rgb(253, 252, 252);
-  padding-bottom: 30px;
-}
-section.veiculos-em-destaque div.container div.box.carros div.img{
-  width:100%;
-  padding-top: 100%;
-  border: 5px solid rgb(255, 255, 253);
-}
-section.veiculos-em-destaque div.container div.box.carros div.img.primeira{
-  background-image: url('/images/img_01.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-section.veiculos-em-destaque div.container div.box.carros div.img.segunda{
-  background-image: url('/images/img_02.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-section.veiculos-em-destaque div.container div.box.carros div.img.terceira{
-  background-image: url('/images/img_03.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-/*section.veiculos-em-destaque div.container div.box.carros> a{
-  background-color: rgb(101, 34, 168);
-  text-decoration: none;
-  color: rgb(219, 211, 211);
-  padding: 2px 20px;
-  text-align:center;
-  margin-left: 15px;
-  border: 3px solid white;
-  border-radius: 5px;
-}*/
-section.veiculos-em-destaque div.container div.box.carros p{
-  margin: 5px 0 15px 15px;
-}
-section.veiculos-em-destaque div.container div.box.carros> h2{
-  margin: 15px;
-}
-  
-/* FIM VEICULOS EM DESTAQUE */
+  }
 
+  .box.carros{
+    text-align: left;
+    background-color:rgba(91, 67, 230, 0.493);
+    width:33.3%;
+    float: left;
+    border: 5px solid rgb(253, 252, 252);
+    padding-bottom: 30px;
+  }
+  .box.carros div.img{
+    width:100%;
+    padding-top: 100%;
+    border: 5px solid rgb(255, 255, 253);
+  }
+  .box.carros div.img.primeira{
+    background-image: url('/images/img_01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .box.carros div.img.segunda{
+    background-image: url('/images/img_02.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .box.carros div.img.terceira{
+    background-image: url('/images/img_03.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /*section.veiculos-em-destaque div.container div.box.carros> a{
+    background-color: rgb(101, 34, 168);
+    text-decoration: none;
+    color: rgb(219, 211, 211);
+    padding: 2px 20px;
+    text-align:center;
+    margin-left: 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+  }*/
+  .box.carros p{
+    margin: 5px 0 15px 15px;
+  }
+  .box.carros> h2{
+    margin: 15px;
+  }
+  .botao{
+    background-color: rgb(101, 34, 168);
+    text-decoration: none;
+    color: rgb(219, 211, 211);
+    padding: 5px 20px;
+    text-align:center;
+    margin:0 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    display:block;
+     
+   }
+   .botao:hover{
+     background-color:rgb(149, 0, 168);
+   }
 
-
-
-
-
+/* FIM VITRINE VENDA*/
 
 .sidebar {
   float: left;
-  width: 50%;
+  width: 30%;
   border: 3px solid rgb(212, 18, 11);
 }
 
 .container{
   border: 1px solid rgb(226, 11, 136);
-  margin: 0 15px;
+  margin: 0 0px;
 }
 /* FIM SECTION VENDAS */
 
@@ -388,7 +383,18 @@ footer P{
 
 
 /* INICIO MEDIA SCREEN */
-
+@media screen and (max-width: 1024px){
+  .vitrine{
+    text-align: center;
+  }
+  .box.carros{  
+    display:inline-block;
+    float:none;
+    width:90%; 
+    text-align: center; 
+  }
+  
+}
 @media screen and (max-width: 810px){
 
   header.header .container{
@@ -426,7 +432,6 @@ header.header nav.mobile> ul li{
   height:35px; 
   
 }
-
 header.header nav.mobile> ul li> a{
   text-decoration: none;
 }
@@ -438,7 +443,6 @@ header.header nav.mobile> ul li:nth-child(1):hover{
   font-weight: 600;
   
 }
-
 footer nav {
   display: none;
   
@@ -450,12 +454,40 @@ footer p{
   float:none;
   margin: 0 auto;
 }
+.vitrine{
+  width:100%;
+  text-align: center;
+}
+.sidebar{
+  width: 100% ;
+  min-width: 300px;
+  float:none;
+  margin: 0 auto;
+}
+div.search1{
+  width: 100%;
+  padding: 0 15px;
+  
+}
+.search2{
+  text-align: center;
+}
+
 }
 @media screen and (max-width:768px){
+
+  .box.carros{  
+    display:inline-block;
+    float:none;
+    width:80%; 
+    text-align: center; 
+  }
   
 }  
 @media screen and (max-width:500px){
-
+  .box.carros{  
+    width:95%;
+  }
 }
 
 /* FIM MEDIA SCREEN */
