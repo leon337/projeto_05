@@ -252,17 +252,17 @@ section.vendas{
     border: 5px solid rgb(255, 255, 253);
   }
   .box.carros div.img.primeira{
-    background-image: url('/images/img_01.jpg');
+    background-image: url('/projeto_05/images/img_01.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   .box.carros div.img.segunda{
-    background-image: url('/images/img_02.jpg');
+    background-image: url('/projeto_05/images/img_02.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   .box.carros div.img.terceira{
-    background-image: url('/images/img_03.jpg');
+    background-image: url('/projeto_05/images/img_03.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -408,7 +408,7 @@ header.header nav.mobile{
   float:right; 
   border: none;
   display:inline-block;
-  background-image: url('/images/menu.png');
+  background-image: url('/projeto_05/images/menu.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width:50px;

@@ -77,7 +77,7 @@ header.header .mobile{
 section.banner{
   width:100%;
   height: calc(100vh - 120px);    
-  background-image: url("../images/bg.jpg");
+  background-image: url("/projeto_05/images/bg.jpg");
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;  
@@ -95,7 +95,7 @@ section.banner div.text-banner {
 }
 section.banner div.text-banner-single {
   color: white;
-  background-image: url('/images/box-text.png');
+  background-image: url('/projeto_05/images/box-text.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /*border: 1px solid white;*/
@@ -121,7 +121,7 @@ section.banner div.text-banner-single:nth-child(3) {
   margin-left: 10px;
 }
 section.banner div.text-banner-single:nth-child(4) {
-  background-image: url('/images/box-white-text.png');
+  background-image: url('/projeto_05/images/box-white-text.png');
   color: black;
   width: 320px;
   font-weight: 400;
@@ -173,17 +173,17 @@ section.veiculos-em-destaque div.container div.box.carros div.img{
   border: 5px solid rgb(255, 255, 253);
 }
 section.veiculos-em-destaque div.container div.box.carros div.img.primeira{
-  background-image: url('/images/img_01.jpg');
+  background-image: url('/projeto_05/images/img_01.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 section.veiculos-em-destaque div.container div.box.carros div.img.segunda{
-  background-image: url('/images/img_02.jpg');
+  background-image: url('/projeto_05/images/img_02.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 section.veiculos-em-destaque div.container div.box.carros div.img.terceira{
-  background-image: url('/images/img_03.jpg');
+  background-image: url('/projeto_05/images/img_03.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -431,7 +431,7 @@ header.header nav.mobile{
   float:right; 
   border: none;
   display:inline-block;
-  background-image: url('/images/menu.png');
+  background-image: url('/projeto_05/images/menu.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width:50px;
@@ -536,7 +536,7 @@ section.veiculos-em-destaque div.container div.box.carros{
 }
 section.banner div.text-banner-single {
   color: white;
-  background-image: url('/images/box-text.png');
+  background-image: url('/projeto_05/images/box-text.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /*border: 1px solid white;*/
@@ -561,7 +561,7 @@ section.banner div.text-banner-single:nth-child(3) {
   margin-left: 16px;
 }
 section.banner div.text-banner-single:nth-child(4) {
-  background-image: url('/images/box-white-text.png');
+  background-image: url('/projeto_05/images/box-white.png');
   font-size: 18px;
   color: black;
   width: 220px;
